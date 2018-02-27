@@ -5,6 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class ProductPage extends BasePage {
 
@@ -20,6 +21,7 @@ public class ProductPage extends BasePage {
     public void clickonBuyItNow() {
 
         waitForElementDisplay(buyItNowButton);
+        Assert.assertTrue(buyItNowButton.isDisplayed());
         buyItNowButton.click();
 
     }

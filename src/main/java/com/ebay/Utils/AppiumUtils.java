@@ -17,7 +17,7 @@ public class AppiumUtils extends JavaUtils {
 //        this.driver = driver;
 //    }
 
-    //Add codes for scroll, swipe, pinch, click, etc....
+    //codes for scroll, swipe, click, etc....
 
     public static void click(MobileElement element) {
         element.click();
@@ -26,8 +26,17 @@ public class AppiumUtils extends JavaUtils {
     public static void scroller() throws IOException {
         TouchAction touchAction = new TouchAction(driver);
         touchAction.press(0, 0).moveTo(1000, 0).release().perform();
-        System.out.println("Screen Swiped ");
+        System.out.println("Screen Scrolled ");
     }
+
+    //    This method is used to scroll the screen such that a particular webelement is visible
+    public static void scrolltoElement(MobileElement element) {
+        JavascriptExecutor Executor = ((JavascriptExecutor) driver);
+        Executor.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
+    //    This method is used to swipe the screen
 
     public static void swipe(MobileElement element1, MobileElement element2) {
         TouchAction ta = new TouchAction(driver);
