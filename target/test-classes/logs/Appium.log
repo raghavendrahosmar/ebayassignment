@@ -1,0 +1,5 @@
+2018-02-27 03:19:11:449 - info: Welcome to Appium v1.3.7 (REV 72fbfaa116d3d9f6a862600ee99cf02f6d0e2182)
+2018-02-27 03:19:11:450 - info: Appium REST http interface listener started on 127.0.0.1:4723
+2018-02-27 03:19:11:453 - info: [debug] Non-default server args: {"address":"127.0.0.1","noReset":true,"log":"D:\\Automation\\Appium\\ebayassignment_raghavendra\\src\\test\\resources\\logs\\Appium.log","logNoColors":true,"platformName":"Android","platformVersion":"18","automationName":"Appium"}
+2018-02-27 03:19:11:454 - info: Console LogLevel: debug
+2018-02-27 03:19:11:454 - info: File LogLevel: debug

@@ -1,0 +1,3 @@
+Test Type,Username,Password,Product,Test Description,
+Scenario1,raghavendrahosmar@rediffmail.com,abcd1234,Books,Valid login,
+Scenario2,Raghavendra,Prabhu,Toys,raghavendra@1234.com,abcd1234
