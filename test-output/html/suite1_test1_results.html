@@ -12,13 +12,13 @@
 <body>
 <h1>Regression suite 1</h1>
 <p>
-  Test duration: 83.130s
+  Test duration: 0.015s
 </p>
 
   <table class="resultsTable configTable">
     <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
               <tr class="group">
-        <td colspan="3">com.ebay.tests.search.SearchTestLandScape</td>
+        <td colspan="3">com.ebay.tests.search.SearchTestPortrait</td>
       </tr>
             
 <tr>
@@ -26,56 +26,28 @@
                   baseBeforeClass
       </td>
   <td class="duration">
-    0.018s
+    0.015s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 7 milliseconds<br/>
-Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;<br/>
-System info: host: &apos;BLRRAPRAB45464&apos;, ip: &apos;10.150.182.158&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;<br/>
-Driver info: driver.version: AndroidDriver</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NoClassDefFoundError: com/ebay/Utils/AppiumUtils</b></a><br />
     <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
-              org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)<br />
-              org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$109/139566260.apply(Unknown Source)<br />
-              org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)<br />
-              org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$111/764419760.apply(Unknown Source)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)<br />
-              org.openqa.selenium.remote.ProtocolHandshake$$Lambda$118/1579957528.apply(Unknown Source)<br />
-              java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)<br />
-              java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)<br />
-              java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)<br />
-              java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)<br />
-              java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)<br />
-              java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)<br />
-              java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)<br />
-              java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
-              java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)<br />
-              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
-              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br />
-              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)<br />
-              io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)<br />
-              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:83)<br />
-              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:93)<br />
-              io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)<br />
-              com.ebay.pages.BasePage.launchDriver(BasePage.java:40)<br />
-              com.ebay.tests.BaseTest.baseBeforeClass(BaseTest.java:26)<br />
+              java.lang.ClassLoader.defineClass1(Native Method)<br />
+              java.lang.ClassLoader.defineClass(ClassLoader.java:760)<br />
+              java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)<br />
+              java.net.URLClassLoader.defineClass(URLClassLoader.java:467)<br />
+              java.net.URLClassLoader.access$100(URLClassLoader.java:73)<br />
+              java.net.URLClassLoader$1.run(URLClassLoader.java:368)<br />
+              java.net.URLClassLoader$1.run(URLClassLoader.java:362)<br />
+              java.security.AccessController.doPrivileged(Native Method)<br />
+              java.net.URLClassLoader.findClass(URLClassLoader.java:361)<br />
+              java.lang.ClassLoader.loadClass(ClassLoader.java:424)<br />
+              sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)<br />
+              java.lang.ClassLoader.loadClass(ClassLoader.java:357)<br />
+              com.ebay.tests.BaseTest.baseBeforeClass(BaseTest.java:25)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -101,7 +73,52 @@ Driver info: driver.version: AndroidDriver</b></a><br />
               org.testng.TestNG.run(TestNG.java:1017)<br />
               org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
               org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                </div>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.ClassNotFoundException: com.ebay.Utils.AppiumUtils</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.net.URLClassLoader.findClass(URLClassLoader.java:381)<br />
+                      java.lang.ClassLoader.loadClass(ClassLoader.java:424)<br />
+                      sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)<br />
+                      java.lang.ClassLoader.loadClass(ClassLoader.java:357)<br />
+                      java.lang.ClassLoader.defineClass1(Native Method)<br />
+                      java.lang.ClassLoader.defineClass(ClassLoader.java:760)<br />
+                      java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)<br />
+                      java.net.URLClassLoader.defineClass(URLClassLoader.java:467)<br />
+                      java.net.URLClassLoader.access$100(URLClassLoader.java:73)<br />
+                      java.net.URLClassLoader$1.run(URLClassLoader.java:368)<br />
+                      java.net.URLClassLoader$1.run(URLClassLoader.java:362)<br />
+                      java.security.AccessController.doPrivileged(Native Method)<br />
+                      java.net.URLClassLoader.findClass(URLClassLoader.java:361)<br />
+                      java.lang.ClassLoader.loadClass(ClassLoader.java:424)<br />
+                      sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)<br />
+                      java.lang.ClassLoader.loadClass(ClassLoader.java:357)<br />
+                      com.ebay.tests.BaseTest.baseBeforeClass(BaseTest.java:25)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
+                  </div>
+          </div>
       </td>
 </tr>
     
@@ -114,6 +131,20 @@ Driver info: driver.version: AndroidDriver</b></a><br />
 <tr>
   <td class="method">
                   baseAfterClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  baseBeforeClass
       </td>
   <td class="duration">
     0.000s
@@ -146,200 +177,6 @@ Driver info: driver.version: AndroidDriver</b></a><br />
             </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.ebay.tests.search.SearchTestPortrait</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  searchProduct
-      </td>
-  <td class="duration">
-    62.481s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by Locator map: <br/>
-- native content: &quot;By.chained({By.id: com.ebay.mobile:id/button_bin})&quot; <br/>
-- html content: &quot;by id or name &quot;buyItNowButton&quot;&quot; (tried for 20 second(s) with 500 MILLISECONDS interval)</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
-              com.ebay.pages.BasePage.waitForElementDisplay(BasePage.java:52)<br />
-              com.ebay.pages.HomePage.navigatetoPDP(HomePage.java:68)<br />
-              com.ebay.tests.search.SearchTestPortrait.searchProduct(SearchTestPortrait.java:24)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:497)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: <br/>
-- native content: &quot;By.chained({By.id: com.ebay.mobile:id/button_bin})&quot; <br/>
-- html content: &quot;by id or name &quot;buyItNowButton&quot;&quot;</a><br />
-        <div class="stackTrace" id="exception-3">
-                      io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)<br />
-                      io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)<br />
-                      io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
-                      com.ebay.pages.BasePage.waitForElementDisplay(BasePage.java:52)<br />
-                      com.ebay.pages.HomePage.navigatetoPDP(HomePage.java:68)<br />
-                      com.ebay.tests.search.SearchTestPortrait.searchProduct(SearchTestPortrait.java:24)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:497)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4196c360 (tried for 1 second(s) with 500 MILLISECONDS interval)</a><br />
-        <div class="stackTrace" id="exception-4">
-                      org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)<br />
-                      io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)<br />
-                      io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
-                      com.ebay.pages.BasePage.waitForElementDisplay(BasePage.java:52)<br />
-                      com.ebay.pages.HomePage.navigatetoPDP(HomePage.java:68)<br />
-                      com.ebay.tests.search.SearchTestPortrait.searchProduct(SearchTestPortrait.java:24)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:497)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.ebay.mobile:id/button_bin})<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;<br/>
-System info: host: &apos;BLRRAPRAB45464&apos;, ip: &apos;10.150.182.158&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;<br/>
-Driver info: driver.version: AndroidDriver</a><br />
-        <div class="stackTrace" id="exception-5">
-                      io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator$$Lambda$134/1664598529.get(Unknown Source)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)<br />
-                      io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)<br />
-                      io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)<br />
-                      io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
-                      com.ebay.pages.BasePage.waitForElementDisplay(BasePage.java:52)<br />
-                      com.ebay.pages.HomePage.navigatetoPDP(HomePage.java:68)<br />
-                      com.ebay.tests.search.SearchTestPortrait.searchProduct(SearchTestPortrait.java:24)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:497)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-                      org.testng.TestRunner.run(TestRunner.java:505)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-                      org.testng.TestNG.run(TestNG.java:1017)<br />
-                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
-                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
 
   <table class="resultsTable" width="100%">
     <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
@@ -382,6 +219,20 @@ Driver info: driver.version: AndroidDriver</a><br />
 <tr>
   <td class="method">
                   BuyItNow
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchProduct
       </td>
   <td class="duration">
     0.000s

@@ -10,9 +10,10 @@ public class BuyProductAfterAddingToCart extends BaseTest {
 
 
     @Test
-    public void BuyItNow(){
-
+    public void BuyItNow() throws InterruptedException {
+        System.out.println("llllSuccess");
         ProductPage productPage = new ProductPage(driver);
+        Thread.sleep(10000);
         productPage.clickonBuyItNow();
         System.out.println("Success");
     }

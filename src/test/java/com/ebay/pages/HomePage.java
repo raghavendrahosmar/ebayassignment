@@ -1,6 +1,7 @@
 package com.ebay.pages;
 
 import com.ebay.Utils.AppiumUtils;
+import com.ebay.Utils.ObjectRepository;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -14,7 +15,10 @@ import org.testng.Assert;
 import java.io.IOException;
 import java.util.List;
 
+import static com.ebay.Utils.ObjectRepository.*;
+
 public class HomePage extends BasePage {
+
 
     public HomePage(AppiumDriver driver) {
         super(driver);
@@ -22,17 +26,30 @@ public class HomePage extends BasePage {
     }
 
 
-    @AndroidFindBy(xpath = "//android.widget.RelativeLayout/android.widget.TextView")
+    @AndroidFindBy(xpath = WelcomeMessage_XPATH)
     MobileElement WelcomeMessage;
 
-    @AndroidFindBy(id="com.ebay.mobile:id/search_box") MobileElement searchTextBox;
-    @AndroidFindBy(id="com.ebay.mobile:id/search_src_text") MobileElement searchkeyTextBox;
-    @AndroidFindBy(id="com.ebay.mobile:id/text") MobileElement firstItemAutoSuggest;
-    @AndroidFindBy(id="com.ebay.mobile:id/cell_collection_item") MobileElement itemContainer;
-    @AndroidFindBy(id="com.ebay.mobile:id/button_add_to_cart") MobileElement addtoCartButton;
-    @AndroidFindBy(id="com.ebay.mobile:id/button_bin") MobileElement buyItNowButton;
+    @AndroidFindBy(id = searchTextBox_ID)
+    MobileElement searchTextBox;
 
+    @AndroidFindBy(id = searchkeyTextBox_ID)
+    MobileElement searchkeyTextBox;
 
+//    @AndroidFindBy(id="com.ebay.mobile:id/text") MobileElement firstItemAutoSuggest;
+
+    @AndroidFindBy(xpath = firstItemAutoSuggest_XPATH)
+    MobileElement firstItemAutoSuggest;
+
+    @AndroidFindBy(id = itemContainer_ID)
+    MobileElement itemContainer;
+
+    @AndroidFindBy(id = addtoCartButton_ID)
+    MobileElement addtoCartButton;
+    @AndroidFindBy(id = buyItNowButton_ID)
+    MobileElement buyItNowButton;
+
+    @AndroidFindBy(xpath = moreButton_XPATH)
+    MobileElement moreButton;
 
 
     public void assertIfUsernameDisplayedOnSuccessfulLogin(String username) throws IOException {
@@ -46,7 +63,7 @@ public class HomePage extends BasePage {
     }
 
 
-    public void searchProduct (String username) throws IOException {
+    public void searchProduct(String username) throws IOException {
 
         String[] testData = readCSV(username);
         waitForElementDisplay(searchTextBox);
@@ -57,7 +74,13 @@ public class HomePage extends BasePage {
 
     }
 
-    public void navigatetoPDP () throws IOException, InterruptedException {
+    public void scrollToMoreButton() {
+        scrolltoElement(moreButton);
+
+    }
+
+
+    public void navigatetoPDP() throws IOException, InterruptedException {
         waitForElementDisplay(itemContainer);
 
         List<MobileElement> productlist = driver.findElements(By.id("com.ebay.mobile:id/cell_collection_item"));
@@ -66,7 +89,6 @@ public class HomePage extends BasePage {
         productlist.get(2).click();
 
         waitForElementDisplay(buyItNowButton);
-
 
 
     }

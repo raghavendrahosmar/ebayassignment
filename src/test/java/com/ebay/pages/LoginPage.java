@@ -10,6 +10,8 @@ import org.testng.Assert;
 import java.awt.*;
 import java.io.IOException;
 
+import static com.ebay.Utils.ObjectRepository.*;
+
 public class LoginPage extends BasePage {
 
     public LoginPage(AppiumDriver driver) {
@@ -17,35 +19,35 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(id = "com.ebay.mobile:id/home")
+    @AndroidFindBy(id = menuButton_ID)
     MobileElement menuButton;
-    @AndroidFindBy(id = "com.ebay.mobile:id/textview_sign_out_status")
+    @AndroidFindBy(id = signInMenuButton_ID)
     MobileElement signInMenuButton;
 
-    @AndroidFindBy(id = "com.ebay.mobile:id/button_register")
+    @AndroidFindBy(id = registerButton_ID)
     MobileElement registerButton;
-    @AndroidFindBy(id = "firstname")
+    @AndroidFindBy(id = firstNameTextfield_ID)
     MobileElement firstNameTextfield;
-    @AndroidFindBy(id = "lastname")
+    @AndroidFindBy(id = lastNameTextfield_ID)
     MobileElement lastNameTextfield;
-    @AndroidFindBy(id = "email")
+    @AndroidFindBy(id = emailTextfield_ID)
     MobileElement emailTextfield;
-    @AndroidFindBy(id = "PASSWORD")
+    @AndroidFindBy(id = passwordTextfield_ID)
     MobileElement passwordTextfield;
 
-    @AndroidFindBy(id = "ppaFormSbtBtn")
+    @AndroidFindBy(id = signInButton_ID)
     MobileElement signInButton;
 
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.EditText[1]")
+    @AndroidFindBy(xpath = usernameTextfield_XPATH)
     MobileElement usernameTextfield;
-    @AndroidFindBy(xpath = "//android.widget.EditText[@text='Password']")
+    @AndroidFindBy(xpath = passwordTextField_XPATH)
     MobileElement passwordTextField;
 
 
-    @AndroidFindBy(accessibility = "Submit")
+    @AndroidFindBy(accessibility = submitButton_ACCESSIBILITY)
     MobileElement submitButton;//Welcome  !
-    @AndroidFindBy(xpath = "//android.widget.RelativeLayout/android.widget.TextView")
+    @AndroidFindBy(xpath = WelcomeMessage_XPATH)
     MobileElement WelcomeMessage;
 
 

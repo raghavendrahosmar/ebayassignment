@@ -1,9 +1,11 @@
 package com.ebay.tests.search;
 
+import com.ebay.Utils.AppiumUtils;
 import com.ebay.pages.BasePage;
 import com.ebay.pages.HomePage;
 import com.ebay.pages.ProductPage;
 import com.ebay.tests.BaseTest;
+import io.appium.java_client.MobileElement;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -11,7 +13,8 @@ import java.io.IOException;
 public class SearchTestLandScape extends BaseTest {
 
 
-    @Test (priority = 0)
+
+    @Test(priority = 1)
     public void searchProduct() throws IOException, InterruptedException {
 
         BasePage basePage = new BasePage(driver);
@@ -23,8 +26,18 @@ public class SearchTestLandScape extends BaseTest {
         log.debug("Navigating to the Product Description Page");
     }
 
+    @Test(priority = 0)
+    public void scrolltoBottomOfPLP() {
 
-    @Test (priority = 1)
+        BasePage basePage = new BasePage(driver);
+        HomePage homepage = new HomePage(driver);
+        homepage.scrollToMoreButton();
+        log.debug("Scrolled to the botton of the page");
+
+    }
+
+
+    @Test(priority = 2)
     public void BuyItNow() throws InterruptedException {
 
         ProductPage productPage = new ProductPage(driver);
@@ -33,7 +46,6 @@ public class SearchTestLandScape extends BaseTest {
         Thread.sleep(4000);
         System.out.println("Success");
     }
-
 
 
 }
